@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+  	-webkit-box-sizing: border-box;
+  	   -moz-box-sizing: border-box;
+   	        box-sizing: border-box;
+}
+
+body {
+	background-color: #eeede9;
+	color: #4aaaa5;
+	font-weight: 300;
+}
+
+.main-wrapper {
+	max-width: 900px;
+	background-color: #35404f;
+	text-align: center;
+	margin: 24px auto; 
+	padding: 24px 0px;
+	-webkit-box-shadow: 0px 0px 24px rgba(53,64,79,0.8);
+	   -moz-box-shadow: 0px 0px 24px rgba(53,64,79,0.8);
+			box-shadow: 0px 0px 24px rgba(53,64,79,0.8);
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	   		border-radius: 6px;
+}
+
+.header {
+	font-weight: 300;
+}
+
+.header--h1 {
+	padding-top: 48px;
+	color: #a3d39c;
+}
+
+.section {
+	margin-top: 60px;
+	padding: 0px 24px;
+}
+
+.form__fieldset {
+	border: none; 
+	display: flex;
+	margin: 12px 0px;
+	height: 24px;
+}
+
+.fieldset {
+	display: flex;
+	flex-direction: row;
+	border: none;
+}
+
+
+.fieldset__part {
+	border: none;
+	flex: 1;
+	margin-top: 0px;
+} 
+
+.form__label {
+	padding-right: 12px;
+	margin-left: 12px;	
+	line-height: 24px;
+}
+
+.input {
+	background-color: #eeede9;
+	border: none;
+	border-radius: 3px;
+	margin-right: 12px;
+	padding: 3px 6px;
+	color: #35404f;
+}
+
+.form__input {
+	flex: 1;
+}
+
+.form__input--min {
+	margin-right: 0px;
+}
+
+@media all and (max-width: 650px) {
+	.fieldset {
+		flex-direction: column;
+	}
+
+	.form__input--min {
+		margin-right: 12px;
+	}
+}
+
+.button {
+	width: 160px;
+	margin: 12px;
+	padding: 6px;
+	line-height: 24px;
+	border-radius: 3px;
+	border: 1px solid #eeede9;
+	background-color: #35404f;
+	color: #7accc8;
+}
+
+.button:hover {
+	border: 1px solid #7accc8;
+	background-color: #7accc8;
+	color: #35404f;
+}
+
+.textarea {
+	display: flex;
+}
+
+.textarea__input {
+	display: block;
+	margin: 12px;
+	flex: 1;
+	text-align: center;
+	font-weight: 300;
+}
+
+.list {
+	list-style-type: none;
+	text-align: left;
+	margin: 12px;
+}
+
+.list__remove-link {
+	text-decoration: none;
+	color: #e45f56;
+	font-size: 24px;
+	margin-left: 12px;
+}
+
+.list__remove-link:after {
+	content: "\2715";
+	vertical-align: middle;
+}
+
+.lengthTotal {
+	display: none;
+	margin: 12px;
+	text-align: left;
+	color: #a3d39c;;
+}
+
+.export__field {
+	display: none;
+	margin: 12px;
+}
